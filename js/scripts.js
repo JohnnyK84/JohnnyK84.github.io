@@ -1,4 +1,4 @@
 function scan() {
-  navigator.bluetooth.requestDevice();
+  navigator.bluetooth.requestDevice({ acceptAllDevices: true });
   alert("Clicked");
 }
