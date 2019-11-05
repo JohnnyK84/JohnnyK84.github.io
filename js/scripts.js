@@ -1,8 +1,8 @@
 function scan() {
   navigator.bluetooth
-    .requestDevice({ filters: [{ namePrefix: "GGL HR5" }] })
+    .requestDevice({ filters: [{ acceptAllDevices: true }] })
     .then(result => {
-      alert(result);
+      //alert(result);
     })
     .catch(err => {
       alert(err);
