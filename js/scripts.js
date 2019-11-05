@@ -1,6 +1,6 @@
 function scan() {
   navigator.bluetooth
-    .requestDevice({ filers: [{ name: "RS420_03866" }] })
+    .requestDevice({ filters: [{ name: "RS420_03866" }] })
     .then(result => {
       alert(result);
     })
