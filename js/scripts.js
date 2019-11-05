@@ -1,6 +1,10 @@
 function scan() {
   navigator.bluetooth
-    .requestDevice({ filters: [{ name: "RS420_03866" }] })
+    .requestDevice({
+      filters: [
+        { acceptAllDevices: True, optionalServices: "device_information" }
+      ]
+    })
     .then(result => {
       //alert(result);
     })
