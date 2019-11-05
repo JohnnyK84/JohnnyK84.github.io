@@ -1,7 +1,7 @@
 function scan() {
   navigator.bluetooth
     .requestDevice({
-      filters: [{ namePrefix: "R" }]
+      filters: [{ name: "hi" }]
     })
     .then(result => {
       //alert(result);
