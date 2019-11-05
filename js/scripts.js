@@ -2,7 +2,7 @@ function scan() {
   navigator.bluetooth
     .requestDevice({
       filters: [
-        { acceptAllDevices: True, optionalServices: "device_information" }
+        { acceptAllDevices: true, optionalServices: "device_information" }
       ]
     })
     .then(result => {
