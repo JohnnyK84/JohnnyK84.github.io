@@ -4,7 +4,7 @@ function scan() {
       filters: [
         {
           acceptAllDevices: true,
-          name: "SNPSHOT Sampler"
+          name: "RS420_03866"
         }
       ]
     })
