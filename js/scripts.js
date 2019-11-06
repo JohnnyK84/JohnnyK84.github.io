@@ -1,3 +1,17 @@
 function scan() {
-  navigtor.bluetooth.startDiscovery(result => console.log(result));
+  navigator.bluetooth
+    .requestDevice({
+      filters: [
+        {
+          acceptAllDevices: true,
+          name: "GGL HR5"
+        }
+      ]
+    })
+    .then(result => {
+      //alert(result);
+    })
+    .catch(err => {
+      alert(err);
+    });
 }
