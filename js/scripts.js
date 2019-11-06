@@ -4,7 +4,7 @@ function scan() {
       filters: [
         {
           acceptAllDevices: true,
-          services: ["battery_service"]
+          name: "SNPSHOT Sampler"
         }
       ]
     })
