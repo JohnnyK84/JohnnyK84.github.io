@@ -1,7 +1,12 @@
 function scan() {
   navigator.bluetooth
     .requestDevice({
-      filters: [{ services: "66021000-43AF-49C1-A7BC-CEF71ABD0AD9" }]
+      filters: [
+        {
+          acceptAllDevices: true,
+          services: "66021000-43AF-49C1-A7BC-CEF71ABD0AD9"
+        }
+      ]
     })
     .then(result => {
       //alert(result);
