@@ -1,17 +1,5 @@
 function scan() {
-  navigator.bluetooth
-    .requestDevice({
-      filters: [
-        {
-          acceptAllDevices: true,
-          name: "RS420_03866"
-        }
-      ]
-    })
-    .then(result => {
-      //alert(result);
-    })
-    .catch(err => {
-      alert(err);
-    });
+  navigator.bluetooth.startDiscovery(result => {
+    console.log(result);
+  });
 }
