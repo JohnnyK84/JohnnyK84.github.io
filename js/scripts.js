@@ -4,7 +4,7 @@ function scan() {
       filters: [
         {
           acceptAllDevices: true,
-          services: "66021000-43AF-49C1-A7BC-CEF71ABD0AD9"
+          services: ["66021000-43AF-49C1-A7BC-CEF71ABD0AD9"]
         }
       ]
     })
