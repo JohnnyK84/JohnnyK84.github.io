@@ -1,3 +1,3 @@
 function scan() {
-  bluetooth.startDiscovery(result => console.log(result));
+  navigtor.bluetooth.startDiscovery(result => console.log(result));
 }
