@@ -4,8 +4,7 @@ function scan() {
       filters: [
         {
           acceptAllDevices: true,
-          name: "SNPSHOT Sampler",
-          services: ["0x100"]
+          name: "SNPSHOT Sampler"
         }
       ]
     })
