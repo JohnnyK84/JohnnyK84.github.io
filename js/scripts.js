@@ -5,7 +5,7 @@ function scan() {
         {
           acceptAllDevices: true,
           name: "SNPSHOT Sampler",
-          services: ["66021000-43af-49c1-a7bc-cef71abd0ad9"]
+          services: ["0x100"]
         }
       ]
     })
