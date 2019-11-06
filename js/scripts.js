@@ -9,7 +9,7 @@ function scan() {
       ]
     })
     .then(result => {
-      alert(result);
+      //alert(result);
     })
     .catch(err => {
       alert(err);
